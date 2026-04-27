@@ -1,0 +1,39 @@
+# Root .gitignore for the workspace
+
+# Node.js
+/node_modules/
+
+# Backend and frontend node_modules (explicitly ignore nested folders)
+/backend/node_modules/
+/frontend/node_modules/
+
+# Frontend build output
+/frontend/dist/
+
+# Environment files (may contain secrets)
+/.env
+/.env.local
+/.env.*
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+
+# Coverage and build artifacts
+/coverage/
+/dist/
+
+# Docker override
+docker-compose.override.yml
+
+# Misc
+*.log

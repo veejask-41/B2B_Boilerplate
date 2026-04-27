@@ -1,0 +1,23 @@
+# Backend .gitignore
+
+# Node
+node_modules/
+
+# Environment
+.env
+.env.local
+.env.*
+
+# Logs
+npm-debug.log*
+yarn-error.log*
+
+# Coverage
+/coverage/
+
+# Editor
+.vscode/
+.idea/
+
+# Build outputs
+/dist/

@@ -1,0 +1,162 @@
+.app-shell {
+  width: min(1200px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 1.5rem 0 2rem;
+}
+
+.app-header {
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  border-radius: 1rem;
+  padding: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.app-header h1 {
+  margin: 0;
+  color: var(--text-strong);
+}
+
+.app-header p {
+  margin: 0.5rem 0 0;
+}
+
+.meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 0.85rem;
+}
+
+.error-banner,
+.info-banner {
+  margin-top: 0.75rem;
+  border-radius: 0.55rem;
+  padding: 0.6rem 0.75rem;
+}
+
+.error-banner {
+  background: #ffe8e8;
+  border: 1px solid #f0b8bd;
+  color: #7f1d1d;
+}
+
+.info-banner {
+  background: #e8f7ef;
+  border: 1px solid #b5dcc8;
+  color: #0f5132;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.panel {
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.panel h2 {
+  margin-top: 0;
+  color: var(--text-strong);
+}
+
+.panel-wide {
+  grid-column: 1 / -1;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.6rem;
+}
+
+.product-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.inline-filters,
+.inline-edit {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.list {
+  margin-top: 0.75rem;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.row-card {
+  border: 1px solid var(--panel-border);
+  border-radius: 0.7rem;
+  padding: 0.7rem;
+  background: var(--card-bg);
+}
+
+.details-card {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.product-row-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.55rem;
+}
+
+.hint {
+  margin: 0.5rem 0;
+  color: #50607a;
+}
+
+input,
+select,
+button {
+  min-height: 2.3rem;
+  border-radius: 0.55rem;
+  border: 1px solid var(--input-border);
+  padding: 0.5rem 0.65rem;
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+  background: var(--action-bg);
+  border-color: var(--action-border);
+  color: var(--action-text);
+}
+
+button.danger {
+  background: #fff1f2;
+  border-color: #ffccd5;
+  color: #991b1b;
+}
+
+button.ghost-button {
+  background: #f4f7ff;
+  border-color: #c6d3ee;
+  color: #2d3f69;
+}
+
+button:disabled,
+input:disabled,
+select:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+@media (max-width: 980px) {
+  .grid-layout,
+  .form-grid,
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}

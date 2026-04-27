@@ -1,0 +1,11 @@
+# DB folder .gitignore
+
+# Ignore local DB dumps or data directories if accidentally added
+postgres_data/
+*.dump
+*.sql.gz
+
+# Logs
+*.log
+
+.DS_Store
